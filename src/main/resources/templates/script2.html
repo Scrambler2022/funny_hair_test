@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <style type="text/css">
+        *{ padding:0; margin:0; list-style: none; }
+        .top{ width:100%; height:100px; background: #F4F4F4;
+            border-bottom:1px solid #DCDCDC;  }
+        .top ul{width:800px; height:100px;
+            margin:0 auto; }
+        .top li{ height:100px; float:left;
+            width:200px; box-sizing: border-box; text-align: center;
+            font-size:22px; font-weight: 600; color:#222;
+            padding-top:35px;
+        }
+        .top li:hover{ border-bottom:4px solid #222; }
+        .banner{ width:100%; height:331px; border:1px solid black;  }
+        h2{ width:100%; text-align: center; font-size:55px; font-weight: 600;
+            box-sizing: border-box; padding-top:90px;
+        }
+        .banner ul { width:262px; height:90px; margin:80px auto 0;
+            padding-top:30px;
+            box-sizing: border-box;
+            border:1px solid black;
+        }
+        .banner li { float:left; width:130px; text-align: center;
+            font-size:25px; font-weight: 500; color: floralwhite}
+        body {
+            background-image: url("images/img_main_s02.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <p th:text="'안녕하세요.' + ${data}" >안녕하세요. 게스트님</p>
+    <ul>
+        <li>목표치</li>
+        <li>대표이사 톰과제리</li>
+        <li>망한머리 역사</li>
+        <li>최후의 5인</li>
+    </ul>
+</div>
+<div class="banner">
+    <h2> </h2><br>
+    <ul>
+        <li>그룹사</li>
+        <li>해외법인</li>
+    </ul>
+</div>
+
+
+</body>
+</html>

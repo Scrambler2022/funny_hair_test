@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <style>
+        *{padding: 0; margin: 0;}
+        video { width: 100%;}
+        h2 {/*text-align: center; font-size: 40px; font-weight: 600;*/
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.25;
+        position: absolute; top: 250px; left: 100px; color: #FFFFFF; width: 100%;}
+        div {width: 100%; height: 960px; overflow: hidden;} /*영상 크롭해서 보여주기*/
+        .cabon1{width: 50%; height: 960px; overflow: hidden;
+        background: url("images/vector_button.svg") no-repeat 100%;}
+        h3 { margin: 30px; font-size: 15px; font-weight: 200; position: absolute; top: 220px;
+            left: 70px; color: #FFFFFF;
+            border-bottom: 1px solid #FFFFFF; display: inline-block;}
+    </style>
+</head>
+<body>
+<p th:text="'안녕하세요.' + ${name}" >안녕하세요. 게스트님</p>
+<div>
+    <video src="video/1089997941-hd.mp4" autoplay muted loop></video>
+</div>
+<div class="cabon1"></div>
+<h2>깨끗한 지구를 향한<br>  포스코의 도전</h2>
+<h3>탄소중립 NETZERO</h3>
+</body>
+</html>
